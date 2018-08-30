@@ -1,8 +1,8 @@
-#Hyperledger Fabric CA示例
+# Hyperledger Fabric CA示例
 
 Hyperledger Fabric CA示例演示了以下内容：
 
-*如何使用Hyperledger Fabric CA客户端和服务器生成所有加密
+* 如何使用Hyperledger Fabric CA客户端和服务器生成所有加密
   材料，而不是使用cryptogen。cryptogen工具不适用于
   生产环境，因为它在同一个位置生成所有私钥
   然后必须将其复制到适当的主机或容器中。此示例演示
@@ -10,14 +10,14 @@ Hyperledger Fabric CA示例演示了以下内容：
   和最终用户(end users)生成加密材料，以便私钥永远不会离开生成它们
   的主机或容器。
 
-*如何使用基于属性的访问控制（ABAC）。请参阅fabric-samples/chaincode/abac/abac.go和
+* 如何使用基于属性的访问控制（ABAC）。请参阅fabric-samples/chaincode/abac/abac.go和
   注意使用*github.com/hyperledger/fabric/core/chaincode/lib/cid*包来提取
   来自调用者身份的属性。仅具有*abac.init*属性值为*true*的标识
   可以成功调用*Init*函数来实例化链码(chaincode)。
 
-##运行本示例
+## 运行本示例
 
-1.运行本示例需要以下镜像：
+1. 运行本示例需要以下镜像：
   *hyperledger/fabric-ca-orderer*, *hyperledger/fabric-ca-peer*, 和 *hyperledger/fabric-ca-tools*
 
     #### 1.1.0
@@ -35,7 +35,7 @@ Hyperledger Fabric CA示例演示了以下内容：
 
 3.要停止由*start.sh*脚本启动的容器，可以运行*stop.sh*脚本。
 
-##理解本示例
+## 理解本示例
 
 * *fabric-samples/fabric-ca/scripts/env.sh*脚本的顶部有一些变量，
 定义了此示例的名称和拓扑。您可以按照脚本中注释的说明修改这些内容，
